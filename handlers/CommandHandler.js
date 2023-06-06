@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const fs = require("fs");
 const path = require("node:path");
+const config = require("../config.json")
 
 module.exports = async (client) => {
   const commands = [];
@@ -37,13 +38,16 @@ module.exports = async (client) => {
         `Started refreshing ${commands.lengt} application (/) commands.`
       );
 
-      const data = await rest.put(
-        Discord.Routes.applicationGuildCommands(process.env.CLIENT_ID, process.env.GUILD_ID),
-        { body: commands }
-      );
+      config.guilds.forEach(async (guild) => {
+        const data = await rest.put(
+          Discord.Routes.applicationGuildCommands(config.client_id, guild.id), {
+            body: commands
+          }
+        );
+      })
 
       console.log(
-        `Successfully reloaded ${data.length} application (/) commands.`
+        `Successfully reloaded ${data.length} application (/) commands on all servers.`
       );
     } catch (e) {
       console.error(e);

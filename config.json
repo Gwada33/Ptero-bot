@@ -1,0 +1,34 @@
+{
+    "token": "TOKEN",
+    "client_id": "CLIENT_ID",
+    "guilds": [
+        {
+            "id": "1863256719",
+            "youtube_channel_id": "128357182735",
+            "notifications_channel_id": "128735812753",
+            "logs_channel_id": "871523875123"
+            
+        },
+        {
+            "id": "1863256719",
+            "youtube_channel_id": "128357182735",
+            "notifications_channel_id": "128735812753",
+            "logs_channel_id": "871523875123"
+            
+        },
+        {
+            "id": "1863256719",
+            "youtube_channel_id": "128357182735",
+            "notifications_channel_id": "128735812753",
+            "logs_channel_id": "871523875123"
+            
+        },
+        {
+            "id": "1863256719",
+            "youtube_channel_id": "128357182735",
+            "notifications_channel_id": "128735812753",
+            "logs_channel_id": "871523875123"
+            
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "kangoo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/rest": "^1.7.1",
+    "discord-api-types": "^0.37.43",
+    "discord.js": "^14.11.0",
+    "dotenv": "^16.1.2",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
+  }
+}
